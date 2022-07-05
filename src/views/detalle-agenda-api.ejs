@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %> 
+</head>
+<body>
+    <%- include('partials/navigation')%>
+    
+    <main id="main">
+        <section id="portfolio-details" class="mt-3">
+            <div class="container">
+                <a href="/proyectos" style="text-decoration:none; color: white;"><img src="https://icongr.am/fontawesome/arrow-circle-left.svg?size=24&color=ebe0e0" alt=""><span>  Volver a Proyectos</span></a>
+                
+                <div class="row gy-4 mt-2">
+                    <div class="col-lg-8">
+                        <img src="/img/portfolio/agenda_1.png" class="d-block w-100" alt="...">
+                        <figure class="text-center mt-2">
+                            <blockquote class="blockquote">
+                                <p>AGENDA API REST | API Rest que permite agendar números de teléfono fijo de Argentina.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">Solo se necesita recibir el nombre de la persona o razón social y su número. La versión 1 solo permite agendar números pertenecientes a CABA y GBA. En la versión 2 se permite agendar números de toda la Argentina.<cite title="Source Title"> API REST AGENDA</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row d-flex justify-content-center">                            
+                            <li><strong>API REST AGENDA</strong></li>
+                            <li><strong>Junio, 2022</strong></li>
+                            <li>
+                                <a href="https://apirestagenda.herokuapp.com/swagger-ui.html" target="_blank"><img src="https://icongr.am/clarity/display.svg?size=32&color=ebe0e0" alt=""></a>
+                                <a href="https://github.com/Caco74/agenda-api-rest" class="github" target="_blank" title="GitHub"><img src="https://icongr.am/feather/github.svg?size=32&color=ebe0e0" alt=""></a>
+                            
+                            </li>
+                            <div>
+                                <hr>
+                                <h3 class="text-center">Tecnologías utilizadas</h3>
+                                <ul>
+                                  <li>Java: Version 8</li>
+                                  <li>Spring Framework: Version 2.5.8</li>
+                                  <li>ModelMapper: Version 3.1.0</li>
+                                  <li>SpringFox: Version 2.9.2</li>
+                                  <li>H2 DataBase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer')%>
+</body>
+</html>

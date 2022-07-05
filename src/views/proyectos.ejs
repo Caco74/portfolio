@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %> 
+</head>
+<body>
+    <%- include('partials/navigation')%>
+
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Estos son algunos de los proyectos que realice de forma individual y grupal.</p>
+          </div>
+          <div class="row">
+            
+            
+            <!-- AGENDA API REST -->
+            <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+                <div class="card border border-dark">
+                    <div class="bg-image ripple" data-mdb-ripple-color="light">
+                        <img src="/img/portfolio/agenda_2.png" class="card-img-top"/>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Agenda API REST</h5>
+                        <p class="card-text">API Rest que permite agendar números de teléfono fijo de Argentina.</p>
+                        <a href="https://apirestagenda.herokuapp.com/swagger-ui.html" class="btn btn-primary" target="_blank"></i>Ver Web</a>
+                        <a href="/detalle-agenda-api" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecyo EGG -->
+            <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+              <div class="card border border-dark">
+                <div class="bg-image ripple" data-mdb-ripple-color="light">
+                  <img src="/img/portfolio/changarin_1.png" class="card-img-top"/>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">ChangarIn - APP</h5>
+                  <p class="card-text">Proyecto grupal , relizado como trabajo final del...</p>
+                  <a href="https://changarin.herokuapp.com/" class="btn btn-primary" target="_blank">Web</a>
+                  <a href="/img/portfolio/portfolio-00.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox btn btn-primary" title="Proyecto final 'Changar In'. App búsqueda de trabajo realizada el fin del curso T.TEC (Trabajo + Tecnología)  de Egg Educación"> Vista Previa</a>
+                  <a href="/detalle-changarin" class="btn btn-primary">Detalles</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Billing System -->
+            <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+              <div class="card border border-dark">
+                <div class="bg-image ripple" data-mdb-ripple-color="light">
+                  <img src="/img/portfolio/invoice_system_1.png" class="card-img-top"/>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Billing System</h5>
+                  <p class="card-text">Customer creation, invoice for the customer ...</p>
+                  <div class="portfolio-links">
+                    <a href="https://spring-boot-heroku87.herokuapp.com/" class="btn btn-primary" target="_blank"></i>Ver Web</a>
+                    <a href="/img/portfolio/invoice_system_1.png" data-gallery="portfolioGallery" class="portfolio-lightbox btn btn-primary" title="Billing System"> Vista Previa</a>
+                    <a href="/detalle-billing-system" class="btn btn-primary">Detalles</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- DEMO API -->
+            <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+              <div class="card border border-dark">
+                <div class="bg-image ripple" data-mdb-ripple-color="light">
+                  <img src="/img/portfolio/demo-api-list.jpg" class="card-img-top"/>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">API REST BÁSICA</h5>
+                  <p class="card-text">API REST con Spring boot.</p>
+                  <a href="detalle-demo-api.html" class="btn btn-primary">Detalles</a>
+                  <a href="/img/portfolio/demo-api-list.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox btn btn-primary" title="API REST Alumnos"> Vista Previa</a>
+                </div>
+              </div>
+            </div>
+    
+            
+  
+            
+  
+            <!-- CONSUMIR API REST -->
+            <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+              <div class="card border border-dark">
+                <div class="bg-image ripple" data-mdb-ripple-color="light">
+                  <img src="/img/portfolio/consumir_api_java.png" class="card-img-top"/>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Consumir API REST</h5>
+                  <p class="card-text">Consumir datos de la API REST de alumnos creada con JAVA.</p>
+                  <a href="detalle-consumir-api-java.html" class="btn btn-primary">Detalles</a>
+                  <a href="/img/portfolio/consumir-api-java.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox btn btn-primary" title="Consumir API REST Alumnos"> Vista Previa</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <%- include('partials/footer')%>
+</body>
+</html>
